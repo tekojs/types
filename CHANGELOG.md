@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/tekojs/types/compare/v1.1.0...v1.1.1) (2026-04-05)
+
+
+### Bug Fixes
+
+* **package:** resolvendo pacotes que estava faltando ([05592ab](https://github.com/tekojs/types/commit/05592abee9e5010448e1ddd2d54868be565f36ec))
+
 ## [1.1.0](https://github.com/tekojs/types/compare/v1.0.1...v1.1.0) (2026-04-05)
 
 
