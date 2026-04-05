@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/tekojs/types/compare/v1.1.2...v1.2.0) (2026-04-05)
+
+
+### Features
+
+* novo arquivo index ([c6611b5](https://github.com/tekojs/types/commit/c6611b5ed7cb08b239132b1f3e600ad9bb621138))
+
 ## [1.1.2](https://github.com/tekojs/types/compare/v1.1.1...v1.1.2) (2026-04-05)
 
 
