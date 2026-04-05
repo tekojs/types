@@ -30,23 +30,30 @@
     "url": "https://github.com/tekojs/types/issues"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "typecheck": "tsc --noEmit",
+    "pretest": "npm run lint",
+    "test": "c8 npm run quick:test",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "format": "prettier . --write",
-    "format:check": "prettier . --check",
+    "format": "prettier --write .",
+    "typecheck": "tsc --noEmit",
+    "clean": "del-cli dist",
+    "precompile": "npm run lint && npm run clean",
+    "compile": "tsup-node && tsc --emitDeclarationOnly --declaration",
+    "build": "npm run compile",
+    "version": "npm run build",
+    "prepublishOnly": "npm run build",
+    "quick:test": "node --import=ts-node-maintained/register/esm --enable-source-maps bin/test.ts",
     "prepare": "husky",
     "commitlint": "commitlint --edit",
-    "commit": "cz",
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "commit": "cz"
   },
   "devDependencies": {
+    "@arapucajs/tsconfig": "^1.0.0",
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
     "@types/node": "^25.5.2",
     "@typescript-eslint/eslint-plugin": "^8.29.0",
     "@typescript-eslint/parser": "^8.29.0",
+    "c8": "^11.0.0",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.23.0",
@@ -54,6 +61,7 @@
     "husky": "^9.1.7",
     "prettier": "^3.5.2",
     "tsdown": "^0.21.7",
+    "tsup": "^8.5.1",
     "typescript": "^6.0.2"
   },
   "config": {
@@ -73,7 +81,7 @@
     "access": "public",
     "provenance": true
   },
-  "tsdown": {
+  "tsup": {
     "entry": [
       "./index.ts",
       "./src/types.ts"
@@ -81,11 +89,8 @@
     "outDir": "./dist",
     "clean": true,
     "format": "esm",
-    "minify": "dce-only",
-    "fixedExtension": false,
     "dts": false,
-    "treeshake": false,
-    "sourcemaps": false,
+    "sourcemap": false,
     "target": "esnext"
   }
 }
