@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/tekojs/types/compare/v1.1.1...v1.1.2) (2026-04-05)
+
+
+### Bug Fixes
+
+* **package:** resolvendo lock arquivo para deixar sicronizado ([bcf7bb6](https://github.com/tekojs/types/commit/bcf7bb633904b2c44f4652b69abbf47f8f20bbe2))
+
 ## [1.1.1](https://github.com/tekojs/types/compare/v1.1.0...v1.1.1) (2026-04-05)
 
 
