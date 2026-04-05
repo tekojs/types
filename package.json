@@ -8,11 +8,18 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "import": "./dist/src/index.js"
     }
   },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "files": [
-    "dist"
+    "dist",
+    "!dist/tests",
+    "!dist/**/*.test.*",
+    "dist/**/*.d.ts",
+    "dist/**/*.js"
   ],
   "repository": {
     "type": "git",
