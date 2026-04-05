@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/tekojs/types/compare/v1.0.0...v1.0.1) (2026-04-05)
+
+
+### Bug Fixes
+
+* **files:** configurando o file export para o types ([56fd15d](https://github.com/tekojs/types/commit/56fd15dccdd95d1c6db6b10c663ba9d29b0ad9ab))
+
 ## 1.0.0 (2026-04-05)
 
 
