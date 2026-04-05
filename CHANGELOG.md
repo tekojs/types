@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/tekojs/types/compare/v1.0.1...v1.1.0) (2026-04-05)
+
+
+### Features
+
+* **package:** add outros package nessesarios para o projeto ([006e237](https://github.com/tekojs/types/commit/006e237e55e00c4a14a02644fc64aa5cfcb9fed2))
+
 ## [1.0.1](https://github.com/tekojs/types/compare/v1.0.0...v1.0.1) (2026-04-05)
 
 
